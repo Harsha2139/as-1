@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Create a new HTML element dynamically and add it to the webpage. | T. Harshavardhan Reddy</title><link href="../assets/style.css" rel="stylesheet"/><script>/* Practical-project compatibility: make element IDs reliably addressable by name. */
+(function(){
+  const ids=['list'];
+  for(const id of ids){
+    if(!Object.prototype.hasOwnProperty.call(window,id)){
+      try{Object.defineProperty(window,id,{configurable:true,get:function(){return document.getElementById(id)}})}catch(e){}
+    }
+  }
+})();</script></head><body><header class="hero"><div class="wrap"><div class="tag">DOM Manipulation</div><h1>Create a new HTML element dynamically and add it to the webpage.</h1><p>A working JavaScript, DOM, event, form, browser, storage or mini-project demonstration from the assignment list.</p><div class="small">T. Harshavardhan Reddy · Section 6 · PRN 250200448</div></div></header><main class="wrap"><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="dom/index.html">Back to Programs</a><a class="btn outline" href="js-124-change-the-background-color-of-an-element-when-a-button-is-clicked.html">← Previous</a><a class="btn outline" href="js-126-remove-an-existing-html-element-dynamically.html">Next →</a></div><section class="demo"><div class="section-head"><div><span class="pill">Experiment 125 of 270</span></div></div><h3>Dynamic element creation</h3><button class="btn" onclick="const p=document.createElement('p');p.className='output';p.textContent='New element created with createElement().';document.getElementById('list').appendChild(p)">Add element</button><div id="list"></div></section><section class="code"><strong>Implementation note</strong>
+This page is self-contained for offline browser execution. Shared visual styling is loaded from <code>assets/style.css</code>; the working demonstration for this experiment is included directly in the page.</section><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="dom/index.html">Back to Programs</a><a class="btn outline" href="js-124-change-the-background-color-of-an-element-when-a-button-is-clicked.html">← Previous</a><a class="btn outline" href="js-126-remove-an-existing-html-element-dynamically.html">Next →</a></div></main><footer class="footer">HTML • CSS • JavaScript Practical Programs · T. Harshavardhan Reddy</footer></body></html>
