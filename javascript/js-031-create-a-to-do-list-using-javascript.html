@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Create a to-do list using JavaScript. | T. Harshavardhan Reddy</title><link href="../assets/style.css" rel="stylesheet"/><script>/* Practical-project compatibility: make element IDs reliably addressable by name. */
+(function(){
+  const ids=['item', 'list'];
+  for(const id of ids){
+    if(!Object.prototype.hasOwnProperty.call(window,id)){
+      try{Object.defineProperty(window,id,{configurable:true,get:function(){return document.getElementById(id)}})}catch(e){}
+    }
+  }
+})();</script></head><body><header class="hero"><div class="wrap"><div class="tag">JavaScript Basics</div><h1>Create a to-do list using JavaScript.</h1><p>A working JavaScript, DOM, event, form, browser, storage or mini-project demonstration from the assignment list.</p><div class="small">T. Harshavardhan Reddy · Section 6 · PRN 250200448</div></div></header><main class="wrap"><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="core/index.html">Back to Programs</a><a class="btn outline" href="js-030-validate-name-email-phone-number-and-password-using-javascript.html">← Previous</a><a class="btn outline" href="js-032-create-a-simple-quiz-application.html">Next →</a></div><section class="demo"><div class="section-head"><div><span class="pill">Experiment 31 of 270</span></div></div><h3>To-do list</h3><div class="row"><input class="search" id="item" placeholder="Add a task"/><button class="btn" onclick="if(item.value.trim()){const li=document.createElement('li');li.textContent=item.value;li.onclick=()=&gt;li.remove();list.appendChild(li);item.value=''}">Add</button></div><ul id="list"></ul><p class="muted small">Click a task to remove it.</p></section><section class="code"><strong>Implementation note</strong>
+This page is self-contained for offline browser execution. Shared visual styling is loaded from <code>assets/style.css</code>; the working demonstration for this experiment is included directly in the page.</section><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="core/index.html">Back to Programs</a><a class="btn outline" href="js-030-validate-name-email-phone-number-and-password-using-javascript.html">← Previous</a><a class="btn outline" href="js-032-create-a-simple-quiz-application.html">Next →</a></div></main><footer class="footer">HTML • CSS • JavaScript Practical Programs · T. Harshavardhan Reddy</footer></body></html>

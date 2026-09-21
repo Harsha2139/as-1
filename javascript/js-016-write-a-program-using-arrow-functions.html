@@ -1,0 +1,13 @@
+<!doctype html>
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Write a program using arrow functions. | T. Harshavardhan Reddy</title><link href="../assets/style.css" rel="stylesheet"/><script>/* Practical-project compatibility: make element IDs reliably addressable by name. */
+(function(){
+  const ids=['out'];
+  for(const id of ids){
+    if(!Object.prototype.hasOwnProperty.call(window,id)){
+      try{Object.defineProperty(window,id,{configurable:true,get:function(){return document.getElementById(id)}})}catch(e){}
+    }
+  }
+})();</script></head><body><header class="hero"><div class="wrap"><div class="tag">JavaScript Basics</div><h1>Write a program using arrow functions.</h1><p>A working JavaScript, DOM, event, form, browser, storage or mini-project demonstration from the assignment list.</p><div class="small">T. Harshavardhan Reddy · Section 6 · PRN 250200448</div></div></header><main class="wrap"><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="core/index.html">Back to Programs</a><a class="btn outline" href="js-015-write-a-program-to-demonstrate-javascript-functions.html">← Previous</a><a class="btn outline" href="js-017-write-a-program-demonstrating-strings-and-string-methods.html">Next →</a></div><section class="demo"><div class="section-head"><div><span class="pill">Experiment 16 of 270</span></div></div><h3>Arrow functions</h3><div class="card"><p>An arrow function performs the same calculation using ES6 arrow syntax.</p><button class="btn" id="run16">Run arrow function</button><div class="output" id="out16"></div></div><script>const add16=(a,b)=>a+b;document.getElementById('run16').addEventListener('click',()=>document.getElementById('out16').textContent=`add16(7,5) = ${add16(7,5)}`);</script></section><section class="code"><strong>Implementation note</strong>
+This page is self-contained for offline browser execution. Shared visual styling is loaded from <code>assets/style.css</code>; the working demonstration for this experiment is included directly in the page.</section><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="core/index.html">Back to Programs</a><a class="btn outline" href="js-015-write-a-program-to-demonstrate-javascript-functions.html">← Previous</a><a class="btn outline" href="js-017-write-a-program-demonstrating-strings-and-string-methods.html">Next →</a></div></main><footer class="footer">HTML • CSS • JavaScript Practical Programs · T. Harshavardhan Reddy</footer></body></html>

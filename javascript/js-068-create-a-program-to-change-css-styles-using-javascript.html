@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Create a program to change CSS styles using JavaScript. | T. Harshavardhan Reddy</title><link href="../assets/style.css" rel="stylesheet"/><script>/* Practical-project compatibility: make element IDs reliably addressable by name. */
+(function(){
+  const ids=['style68'];
+  for(const id of ids){
+    if(!Object.prototype.hasOwnProperty.call(window,id)){
+      try{Object.defineProperty(window,id,{configurable:true,get:function(){return document.getElementById(id)}})}catch(e){}
+    }
+  }
+})();</script></head><body><header class="hero"><div class="wrap"><div class="tag">DOM &amp; Event-Based Experiments</div><h1>Create a program to change CSS styles using JavaScript.</h1><p>A working JavaScript, DOM, event, form, browser, storage or mini-project demonstration from the assignment list.</p><div class="small">T. Harshavardhan Reddy · Section 6 · PRN 250200448</div></div></header><main class="wrap"><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="dom/index.html">Back to Programs</a><a class="btn outline" href="js-067-create-a-program-to-remove-html-elements-dynamically.html">← Previous</a><a class="btn outline" href="js-069-create-a-program-to-change-multiple-html-elements-simultaneously.html">Next →</a></div><section class="demo"><div class="section-head"><div><span class="pill">Experiment 68 of 270</span></div></div><h3>Change CSS styles dynamically</h3><div class="feature" id="style68">Styled element</div><button class="btn" onclick="const e=document.getElementById('style68');e.style.background='#dff7e8';e.style.color='#0f7a36';e.style.transform='scale(1.03)'">Apply Styles</button></section><section class="code"><strong>Implementation note</strong>
+This page is self-contained for offline browser execution. Shared visual styling is loaded from <code>assets/style.css</code>; the working demonstration for this experiment is included directly in the page.</section><div class="nav"><a class="btn" href="../index.html">Home</a><a class="btn alt" href="dom/index.html">Back to Programs</a><a class="btn outline" href="js-067-create-a-program-to-remove-html-elements-dynamically.html">← Previous</a><a class="btn outline" href="js-069-create-a-program-to-change-multiple-html-elements-simultaneously.html">Next →</a></div></main><footer class="footer">HTML • CSS • JavaScript Practical Programs · T. Harshavardhan Reddy</footer></body></html>
