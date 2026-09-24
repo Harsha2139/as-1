@@ -241,5 +241,7 @@ https://harsha2139.github.io/as-1/
 ### 👨‍💻 Author
 
 T. Harshavardhan Reddy
+
 Section: 6
+
 PRN: 250200448
